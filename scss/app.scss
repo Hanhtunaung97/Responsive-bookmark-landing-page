@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@600&family=Padauk:wght@400;700&family=Rubik:ital,wght@0,300;0,400;0,500;0,700;1,600&family=Titillium+Web:wght@400;700&display=swap");
+@import "../node_modules/@fortawesome/fontawesome-free/css/all.css";
+
+$font-family-sans-serif: "Rubik", "Padauk", sans-serif;
+$primary: hsl(231, 69%, 60%);
+$danger: hsl(0, 94%, 66%);
+$navbar-nav-link-padding-x: 30px;
+$btn-padding-x: 20px;
+$btn-padding-y: 10px;
+$input-padding-y: 10px;
+$input-padding-x: 20px;
+$font-size-base: 1rem;
+$nav-link-color: black;
+$nav-underline-link-active-color: $danger;
+$accordion-icon-color:$primary;
+
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  1: $spacer * 0.25,
+  2: $spacer * 0.5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+  6: $spacer * 6,
+  7: $spacer * 9,
+  8: $spacer * 12,
+  9: $spacer * 15,
+);
+
+#hero {
+  background-image: url(../design/Rectangle.svg);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: 35%;
+}
+.hero-img {
+  img {
+    width: 100%;
+  }
+}
+#features {
+  background-image: url(../images/Rectangle\ 2.svg);
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  background-size: 35%;
+  .nav-link {
+    padding: 1rem 2rem;
+  }
+}
+footer{
+  background-color:  hsl(229, 31%, 21%);
+}
+
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+@include media-breakpoint-only(lg){
+  .hero-display-text{
+    font-size: 2rem;
+  }
+}
